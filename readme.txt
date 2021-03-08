@@ -12,3 +12,20 @@ git命令行
 
  django教程网址
  https://developer.mozilla.org/zh-CN/docs/learn/Server-side/Django/skeleton_website
+
+设置Django开发环境
+  安装虚拟环境软件:pip3 install virtualenvwrapper-win
+  创建虚拟环境 : mkvirtualenv my_django_environment
+  使用一个虚拟环境
+    deactivate —退出当前的Python虚拟环境
+    workon — 列出可用的所有虚拟环境
+    workon name_of_environment —激活特定的Python虚拟环境
+    rmvirtualenv name_of_environment — 移除特定的虚拟环境
+  安装Django
+    再虚拟环境中，pip3 install django
+    测试Django是否安装 : py -m django --version  #windows系统
+    运行web ： py manage.py runserver
+  运行数据库迁移
+    python3 manage.py makemigrations
+    python3 manage.py migrate
+    重要信息: 每次模型改变，都需要运行以上命令，来影响需要存储的数据结构（包括添加和删除整个模型和单个字段）。
