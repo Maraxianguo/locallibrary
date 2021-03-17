@@ -29,3 +29,10 @@ git命令行
     python3 manage.py makemigrations
     python3 manage.py migrate
     重要信息: 每次模型改变，都需要运行以上命令，来影响需要存储的数据结构（包括添加和删除整个模型和单个字段）。
+
+SQlite配置和使用
+    下载sqlite的dll文件和tool文件 https://www.sqlite.org/download.html
+    解压在一个文件夹里，我的是在c：\work\sqlite
+    配置windows路径，打开cmd，输入  sqlite3 看到有反应
+    在django里，
+      python manage.py dbshell
